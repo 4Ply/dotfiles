@@ -1,0 +1,66 @@
+! Scrollbar or nobar lol
+URxvt.scrollBar: false
+
+! Adds padding around terminal text
+! URxvt.borderColor:rgba:0000/0000/0200/c800
+! URxvt.borderColor:rgba:0f00/0f00/0f00/0000
+URxvt.borderColor:#4db6ac
+URxvt.internalBorder: 1,20,40,80 
+
+! Font
+URxvt*font:     xft:Monospace,xft:Awesome:pixelsize=14
+! URxvt.font:xft:droid sans mono slashed:medium:pixelsize=14
+URxvt.boldFont:xft:droid sans mono slashed:medium:pixelsize=14
+! uRxvt*font: -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso8859-1
+! URxvt*boldfont: -xos4-terminus-bold-r-normal--12-120-72-72-c-60-iso8859-1
+! URxvt.font: -gohu-gohufont-medium-r-normal-11-80-100-100-c-60--iso8895-1
+! URxvt.boldfont: -gohu-gohufont-bold-r-normal-11-80-100-100-c-60-iso8859-1
+
+! Colors Dark then Light or Left then Right if Termsexy
+URxvt*background:#1d1d1f
+URxvt*foreground:#cdcdcd
+
+! Other colors
+! blacks
+URxvt*color0:#111111
+URxvt*color8:#111111
+
+! reds
+URxvt*color1:#c23660
+URxvt*color9:#c23660
+
+! greens
+URxvt*color2:#c236b2
+URxvt*color10:#c236b2
+
+! yellows
+URxvt*color3:#7b38c2
+URxvt*color11:#7b38c2
+
+! blues
+URxvt*color4:#425bb0
+URxvt*color12:#425bb0
+
+! magentas
+URxvt*color5:#35a6c2
+URxvt*color13:#35a6c2
+
+! cyans
+URxvt*color6:#35c26f
+URxvt*color14:#35c26f
+
+! whites
+URxvt*color7:#cdcdcd
+URxvt*color15:#cdcdcd
+
+
+! Transparency
+URxvt*.transparent: false
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+URxvt*.shading: 25
+
+! Clickable Links
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/chromium
+URxvt.matcher.button: 1
+URxvt.termName: rxvt
