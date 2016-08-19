@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo chmod +x ~/Dropbox/dotfiles/scripts/*
+sudo ln -s ~/Dropbox/dotfiles/scripts/* /usr/local/bin/
