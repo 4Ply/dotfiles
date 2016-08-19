@@ -1,1 +1,8 @@
-/home/pawel/Dropbox/usr_scripts/power
+#!/bin/bash
+res=$(echo "i3c|rofic" | rofi -sep "|" -dmenu -i -p 'Edit config: ' "" -hide-scrollbar -width 15 -sidebar-mode)
+
+urxvt -e zsh -ic $res
+if [ $res = "logout" ]; then
+    echo "a"
+fi
+exit 0

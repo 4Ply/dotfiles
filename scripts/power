@@ -1,1 +1,16 @@
-/home/pawel/Dropbox/usr_scripts/power
+#!/bin/bash
+res=$(echo "shutdown|logout|restart|suspend" | rofi -sep "|" -dmenu -i -p 'Power: ' "" -hide-scrollbar -width 10 -sidebar-mode)
+
+if [ $res = "logout" ]; then
+i3-msg exit
+fi
+if [ $res = "restart" ]; then
+systemctl reboot
+fi
+if [ $res = "suspend" ]; then
+systemctl suspend
+fi
+if [ $res = "shutdown" ]; then
+systemctl poweroff
+fi
+exit 0
